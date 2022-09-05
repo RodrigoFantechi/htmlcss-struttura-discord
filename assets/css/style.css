@@ -1,0 +1,65 @@
+/* Common rules */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-fluid{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Griglia con Flexbox */
+.col-1{
+    width: calc( (100% / 12) * 1 );
+}
+.col-2{
+    width: calc( (100% / 12) * 2 );
+}
+.col-3{
+    width: calc( (100% / 12) * 3 );
+}
+.col-6 {
+    width: calc( (100% / 12) * 8 );
+}
+.col-8{
+    width: calc( (100% / 12) * 9 );
+}
+.col-9{
+    width: calc( (100% / 12) * 9 );
+}
+
+
+/* .header{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+header{
+    position: relative;
+} */
+
+/* Debug */
+
+.debug.header{
+    background-color: #ADD8E6;
+}
