@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css -->
     <link rel="stylesheet" href="./style.css">
     <title>htmlcss-struttura-discord</title>
 </head>
@@ -16,11 +22,11 @@
 
     <header>
         <div class="container">
-            <div class="row title">
+            <div class="row navbar">
                 <div class="col-2">
                     <img src="../assets/img/logo.svg" alt="Discord logo">
                 </div>
-                <div class="col-8">
+                <div class="col-8 tx_center">
                     <a href="#">Scarica</a>
                     <a href="#">Perché Discord</a>
                     <a href="#">Nitro</a>
@@ -33,22 +39,22 @@
             </div>
         </div>
     </header>
-
     <main>
-        <!-- sezione main che is combina con l'heder -->
-        <section class="sub_title">
-            <div class="container title_main">
+        <!-- banner -->
+        <section class="banner">
+            <div class="container banner_article">
                 <h2>Il tuo posto per parlare</h2>
                 <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, <br> o
                     semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme,<br> Discordrende più
                     facile chiaccherare ogni giorno e ritrovarsi più spesso.</p>
-
-                <button class="btn download">Scarica per Mac</button>
-                <button class="btn open_browser">Apri Discord nel tuo brower</button>
+                <div class="btn_group">
+                    <button class="btn download_for_mac"> <i class="fa-solid fa-down-long"></i> Scarica per Mac</button>
+                    <button class="btn open_browser">Apri Discord nel tuo brower</button>
+                </div>
             </div>
         </section>
-        <!-- sotto sezione bianca/grigia -->
-        <section class="sub_section white">
+        <!-- sub section Talk_Space -->
+        <section class="sub_section background_white" id="talk_spac">
             <div class="container">
                 <div class="row">
                     <div class="col-7">
@@ -62,8 +68,8 @@
                 </div>
             </div>
         </section>
-        <!-- sotto sezione bianca/grigia -->
-        <section class="sub_section grey">
+        <!-- sub section  Easy_Find -->
+        <section class="sub_section background_grey" id="easy_find">
             <div class="container">
                 <div class="row">
                     <div class="col-5">
@@ -77,8 +83,8 @@
                 </div>
             </div>
         </section>
-        <!-- sotto sezione bianca/grigia -->
-        <section class="sub_section white">
+        <!-- sub section Fandom -->
+        <section class="sub_section background_white" id="fandom">
             <div class="container">
                 <div class="row">
                     <div class="col-7">
@@ -86,22 +92,26 @@
                     </div>
                     <div class="col-5">
                         <h2>Da pochi a un fandom</h2>
-                        <p>Dai inizio a una communitu di qualsiasi dimensione con strumenti di moderazione e accesos ai membri personalizzabile. <br> Concedi ai membri poteri speciali,crea canali privatim e molto altro</p>
+                        <p>Dai inizio a una communitu di qualsiasi dimensione con strumenti di moderazione e accesos ai
+                            membri personalizzabile. <br> Concedi ai membri poteri speciali,crea canali privatim e molto
+                            altro</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- sotto sezione bianca/grigia -->
-        <section class="sub_section grey">
-            <div class="container end_main">
+        <!-- sub section Keep_in_Touch -->
+        <section class="sub_section background_grey" id="keep_in_touch">
+            <div class="container tx_center">
                 <h2>Tecnologia affidabile per teneris in contatto</h2>
-                <p>Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riuniveti in una sesisone di disegno con la condivisione schermo</p>
+                <p>Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in
+                    video, guarda gli amici giocare in streaming, o riuniveti in una sesisone di disegno con la
+                    condivisione schermo</p>
                 <img src="../assets/img/item4-big.svg" alt="videochiamata">
                 <div class="stars">
                     Pronto a iniziare la tua avventura?
-                    </div>
-                    <button class="btn purple">Scarica per Mac</button>
-
+                </div>
+                <button class="btn download_for_mac purple">
+                    <i class="fa-solid fa-down-long"></i> Scarica per Mac</button>
             </div>
         </section>
     </main>
@@ -111,13 +121,61 @@
         <section>
             <div class="container footer_top">
                 <div class="row">
-                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <div>
+                            <h2>Il tuo posto per parlare</h2>
+                        </div>
+                        <div>
+                            <img src="../assets/img/ita.png" id="flag_italy" alt="Bandiera verde bianca rossa">
+                            <span>italiano<i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-square-youtube"></i>
+                        </div>
+                    </div>
+
                     <div class="col-8">
                         <div class="row">
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
-                            <div class="col-3"></div>
+                            <div class="col-3">
+                                <a href="#">Prodotto</a>
+                                <a href="#">Scarica</a>
+                                <a href="#">Perché Discord</a>
+                                <a href="#">Nitro</a>
+                                <a href="#">Sicurezza</a>
+                                <a href="#">Assistenza</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">Compagnia</a>
+                                <a href="#">Chi siamo</a>
+                                <a href="#">Lavora con noi</a>
+                                <a href="#">Marchio</a>
+                                <a href="#">Redazione</a>
+                                <a href="#">Negozio</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">Risorse</a>
+                                <a href="#">Scarica</a>
+                                <a href="#">Perché Discord</a>
+                                <a href="#">Nitro</a>
+                                <a href="#">Sicurezza</a>
+                                <a href="#">Assistenza</a>
+                                <a href="#">Scarica</a>
+                                <a href="#">Perché Discord</a>
+                                <a href="#">Nitro</a>
+                                <a href="#">Sicurezza</a>
+                                <a href="#">Assistenza</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">Norme</a>
+                                <a href="#">Scarica</a>
+                                <a href="#">Perché Discord</a>
+                                <a href="#">Nitro</a>
+                                <a href="#">Sicurezza</a>
+                                <a href="#">Assistenza</a>
+                            </div>
                         </div>
                     </div>
                 </div>
